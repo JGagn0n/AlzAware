@@ -1,5 +1,4 @@
 # AlzAware
-[![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg)](https://github.com/JGagn0n/AlzAware/issues)<br>
 Simple Apple TV app to display Alzheimer's facts for awareness day.
 <br><br>
 ## Build Instructions ##
