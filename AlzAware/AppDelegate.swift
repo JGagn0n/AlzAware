@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  AlzAware
 //
-//  Created by Justin on 6/20/17.
 //  Copyright © 2017 Silversphere. All rights reserved.
 //
 

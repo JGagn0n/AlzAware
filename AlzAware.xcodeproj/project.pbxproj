@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4673F059ADAE98FD8850F8A5 /* Pods_AlzAware.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE95EB966D49266AD345555 /* Pods_AlzAware.framework */; };
 		D0892CE21EF98119004743FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0892CE11EF98119004743FD /* AppDelegate.swift */; };
 		D0892CE41EF98119004743FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0892CE31EF98119004743FD /* ViewController.swift */; };
 		D0892CE71EF98119004743FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0892CE51EF98119004743FD /* Main.storyboard */; };
 		D0892CE91EF98119004743FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0892CE81EF98119004743FD /* Assets.xcassets */; };
+		D0892CF11EF9A16C004743FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0892CF01EF9A16C004743FD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EE95EB966D49266AD345555 /* Pods_AlzAware.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlzAware.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F38CFF4E00FD1398A3D6D48 /* Pods-AlzAware.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlzAware.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlzAware/Pods-AlzAware.release.xcconfig"; sourceTree = "<group>"; };
+		59A75C9AAD474C44608E2CC5 /* Pods-AlzAware.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlzAware.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlzAware/Pods-AlzAware.debug.xcconfig"; sourceTree = "<group>"; };
 		D0892CDE1EF98119004743FD /* AlzAware.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlzAware.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0892CE11EF98119004743FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0892CE31EF98119004743FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0892CE61EF98119004743FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0892CE81EF98119004743FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0892CEA1EF98119004743FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0892CF01EF9A16C004743FD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4673F059ADAE98FD8850F8A5 /* Pods_AlzAware.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E9F7A5BC2161FB723563DF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59A75C9AAD474C44608E2CC5 /* Pods-AlzAware.debug.xcconfig */,
+				4F38CFF4E00FD1398A3D6D48 /* Pods-AlzAware.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C340C21DC8438C7B9A030E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EE95EB966D49266AD345555 /* Pods_AlzAware.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D0892CD51EF98118004743FD = {
 			isa = PBXGroup;
 			children = (
 				D0892CE01EF98119004743FD /* AlzAware */,
 				D0892CDF1EF98119004743FD /* Products */,
+				2E9F7A5BC2161FB723563DF7 /* Pods */,
+				4C340C21DC8438C7B9A030E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +83,7 @@
 				D0892CE51EF98119004743FD /* Main.storyboard */,
 				D0892CE81EF98119004743FD /* Assets.xcassets */,
 				D0892CEA1EF98119004743FD /* Info.plist */,
+				D0892CF01EF9A16C004743FD /* Constants.swift */,
 			);
 			path = AlzAware;
 			sourceTree = "<group>";
@@ -68,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0892CED1EF98119004743FD /* Build configuration list for PBXNativeTarget "AlzAware" */;
 			buildPhases = (
+				42FE1CE417557C73062D81E5 /* [CP] Check Pods Manifest.lock */,
 				D0892CDA1EF98118004743FD /* Sources */,
 				D0892CDB1EF98118004743FD /* Frameworks */,
 				D0892CDC1EF98118004743FD /* Resources */,
+				CAC7370864C7AFB2664FAC09 /* [CP] Embed Pods Frameworks */,
+				C034F86EA0D8070016E7FEE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -93,7 +123,7 @@
 				TargetAttributes = {
 					D0892CDD1EF98118004743FD = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = YNH9M5P345;
+						DevelopmentTeam = L6J5L363E8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -128,6 +158,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42FE1CE417557C73062D81E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C034F86EA0D8070016E7FEE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlzAware/Pods-AlzAware-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAC7370864C7AFB2664FAC09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlzAware/Pods-AlzAware-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0892CDA1EF98118004743FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -135,6 +213,7 @@
 			files = (
 				D0892CE41EF98119004743FD /* ViewController.swift in Sources */,
 				D0892CE21EF98119004743FD /* AppDelegate.swift in Sources */,
+				D0892CF11EF9A16C004743FD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +326,11 @@
 		};
 		D0892CEE1EF98119004743FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59A75C9AAD474C44608E2CC5 /* Pods-AlzAware.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = YNH9M5P345;
+				DEVELOPMENT_TEAM = L6J5L363E8;
 				INFOPLIST_FILE = AlzAware/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Silversphere.AlzAware;
@@ -261,10 +341,11 @@
 		};
 		D0892CEF1EF98119004743FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F38CFF4E00FD1398A3D6D48 /* Pods-AlzAware.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = YNH9M5P345;
+				DEVELOPMENT_TEAM = L6J5L363E8;
 				INFOPLIST_FILE = AlzAware/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Silversphere.AlzAware;
@@ -292,6 +373,7 @@
 				D0892CEF1EF98119004743FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
